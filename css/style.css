@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* padding: 0; */
+}
+
+.logo h1 {
+    font-family: 'Fira Kode', monospace;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+span {
+    color: #FF4A57;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #23263A;
+}
+
+header.navbar {
+    /* max-width: 1200px; */
+    min-width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8%;
+    /* padding-block: 1rem; */
+    z-index: 999;
+    /* border: solid red; */
+}
+
+header.navbar .nav-list ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    gap: 2rem 2rem;
+}
+
+header.navbar .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar .nav-list li:hover a {
+    background-color: #FF4A57;
+    color: #fff;
+}
+
+main {
+    min-width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Start Hero Section */
+main .hero {
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    padding-inline: 8%;
+    gap: 13rem;
+    /* border: solid 3px; */
+}
+
+main .hero .content-hero {
+    font-weight: 300;
+}
+
+main .hero .content-hero .title {
+    font-size: 3.5rem;
+    margin-block: 2.3rem;
+    /* border: solid 3px; */
+}
+
+main .hero .content-hero p {
+    line-height: 1.7rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+main .hero .content-hero button {
+    padding: .5rem 1.2rem;
+    margin-block-start: .2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #FF4A57;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all .15s ease-in;
+}
+
+main .hero .content-hero button:hover {
+    border: 2px solid #FF4A57;
+    color: #FF4A57;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+main .hero .img-content {
+    display: flex;
+    /* border: solid 3px; */
+    margin: 20px;
+}
+
+main .hero .img-content img {
+    min-width: 250px;
+    width: 300px;
+    border-radius: 999px;
+}
+
+/* End Hero Section */
+
+/* Start project section */
+.project {
+    min-height: 100vh;
+    width: 100%;
+    /* border-radius: 50px 50px 0 0;
+    background-color: #FF4A57; */
+}
+
+.content-project {
+    text-align: center;
+}
+
+main .title-hero{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: .5rem;
+}
+
+main .title {
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 1rem;
+    color: #FF4A57;
+}
+
+main .content-project p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.project .img-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card {
+    /* width: 100%; */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-block-start: 6rem;
+    margin-inline: 10%;
+    /* border: solid 3px blue; */
+}
+
+.card .content-card {
+    /* border: solid 4px #FF4A57; */
+    border-radius: 12px;
+    padding: 5px;
+    flex: 1 1;
+    transition: transform .5s ease;
+    background-color: #2B2D41;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card .content-card .title-card {
+    padding: 8px;
+    line-height: 1.3rem;
+}
+
+.card .content-card a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-card .title-card h3{
+    line-height: 2px;
+    font-size: 1.4rem;
+    color: #FF4A57;
+}
+
+.content-card .title-card p{
+    font-size: 1rem;
+}
+
+.card .content-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* End Project Section */
+
+/* Start Kontak Section */
+.kontak {
+    min-height: 100vh;
+    width: 100%;
+    /* border: solid 3px; */
+}
+
+
+.kontak .content-kontak {
+    text-align: center;
+}
+
+main .content-kontak p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.form {
+    display: flex;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 3px; */
+}
+
+.kontak .form .form-input {
+    width: 490px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    /* border: solid 3px #FF4A57; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: transform .5s ease;
+}
+
+.form-input:hover {
+    transform: scale(1.1);
+}
+
+.form .form-input input {
+    max-width: 100%;
+    max-height: 3.4rem;
+    border: none;
+    padding: 12px;
+    background: #2B2D41;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 4px;
+    color: #fff;
+    /* border: solid 3px #FF4A57; */
+    margin-block: 12px;
+}
+
+.form .form-input input:focus{
+    outline: solid 3px #FF4A57;
+}
+
+.form .form-input button {
+    min-width: 192px;
+    min-height: 42px;
+    border: none;
+    margin-top: 28px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: #FF4A57;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.form .form-input button:hover {
+    background-color: #2B2D41;
+    color: #FF4A57;
+}
+
+/* End Kontak Section */
+
+/* Start Aside Section */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .sosmed {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: solid; */
+}
+
+main aside .sosmed ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #2D3E50;
+    display: flex;
+
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .sosmed li {
+    list-style-type: none;
+}
+
+main aside .sosmed li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+main aside .sosmed li a:hover {
+    color: #FF4A57;
+}
+
+/* End Aside Section */
+
+/* Media Query Tablet */
+
+/* Media Query Smartphone */
+@media screen and (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+    }
+
+    header.navbar .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main {
+        padding: 1rem 1.5rem;
+        /* border: solid; */
+    }
+
+    main .hero {
+        flex-direction: column;
+        gap: 2rem;
+        /* border: solid; */
+        height: 100vh;
+    }
+
+    main .hero .content-hero .title-hero {
+        font-size: 2rem;
+    }
+
+    main .title{
+        font-size: 2rem;
+    }
+
+    main .content-project p,
+    main .content-kontak p{
+        font-size: .8rem;
+    }
+
+    main .hero .content-hero p {
+        font-size: 1rem;
+    }
+
+    main .hero .img-content img {
+        margin-block-start: 10px;
+        width: 200px;
+        /* border: solid 3px; */
+    }
+
+    main .hero .img-content {
+        order: -1;
+    }
+
+    main .hero .content-hero button {
+        padding: .4rem .8rem;
+        font-weight: 600;
+        font-size: .7rem;
+    }
+
+    .card {
+        margin-block-start: 2rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .kontak .form .form-input {
+        margin: 10%;
+        /* height: ; */
+    }
+}
